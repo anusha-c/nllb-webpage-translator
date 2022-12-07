@@ -1,3 +1,3 @@
 # nllb-webpage-translator
-[Paper](https://research.facebook.com/publications/no-language-left-behind/)
+[Paper](https://github.com/anusha-c/nllb-webpage-translator/blob/main/manifest.json)
 
