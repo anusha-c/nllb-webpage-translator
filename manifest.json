@@ -6,7 +6,7 @@
     "action": {
       "default_popup": "client/index.html"
     },
-    "permissions": ["activeTab"],
+    "permissions": ["activeTab", "tabs"],
     "host_permissions": ["http://*/"]
   }
   

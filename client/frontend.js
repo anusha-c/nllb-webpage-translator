@@ -1,9 +1,14 @@
 async function translateText(){
     alert("entered function")
     try{
-        const translatedText = await axios.post("http://127.0.0.1:5000/translate", {src_lang_data:"placeholder for html data"}).then(
-            (res)=>{alert(
-                res.data["src_lang_data"]);}
+        chrome.tabs.query({active: true, lastFocusedWindow: true}).then(
+            async tabs => {
+                let url = tabs[0].url
+                const translatedText = await axios.post("http://127.0.0.1:5000/translate", {src_url:url}).then(
+                (res)=>{alert(
+                    res.data["src_lang_data"]);}
+        )
+            }
         )
     }
     catch(e){
