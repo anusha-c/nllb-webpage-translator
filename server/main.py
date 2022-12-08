@@ -6,6 +6,7 @@ import os
 app = Flask(__name__)
 
 basedir = os.path.abspath(os.path.dirname(__file__))
+os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
 api = Api(app)
 
